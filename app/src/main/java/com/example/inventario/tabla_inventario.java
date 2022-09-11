@@ -11,6 +11,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+
+import com.google.android.material.switchmaterial.SwitchMaterial;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -68,14 +74,30 @@ public class tabla_inventario extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button producto = (Button) view.findViewById(R.id.producto);
-        Button detalle = (Button) view.findViewById(R.id.detalle);
-
+        CheckBox producto = (CheckBox) view.findViewById(R.id.producto);
+        Switch detalle = (Switch) view.findViewById(R.id.detalle);
         producto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.tabla_inventario);
+                if(((CompoundButton) view).isChecked()){
+                    Navigation.findNavController(view).navigate(R.id.detalle_producto);
+                } else {
+                    System.out.println("Un-Checked");
+                }
             }
         });
+
+        detalle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(((CompoundButton) view).isChecked()){
+                    Navigation.findNavController(view).navigate(R.id.crear_producto);
+                } else {
+                    System.out.println("Un-Checked");
+                }
+            }
+        });
+
+
     }
 }
