@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView
+            android:text="ID" />
+
+        <TextView
+            android:text="Marca" />
+        <TextView
+            android:text="Referencia" />
+        <TextView
+            android:text="Cantidad" />
+        <TextView
+            android:text="Accion" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/modificar"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:text="producto" />
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="86dp"
+            android:text="apple" />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:text="Iphone 11" />
+
+        <TextView
+            android:layout_width="37dp"
+            android:layout_height="34dp"
+            android:text="20" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Editar" />
+    </TableRow>
+</TableLayout>

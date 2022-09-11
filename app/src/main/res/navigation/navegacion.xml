@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.inventario.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_tabla_inventario"
+            app:destination="@id/tabla_inventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabla_inventario"
+        android:name="com.example.inventario.tabla_inventario"
+        android:label="fragment_tabla_inventario"
+        tools:layout="@layout/fragment_tabla_inventario" >
+        <action
+            android:id="@+id/action_tabla_inventario_to_detalle_producto"
+            app:destination="@id/detalle_producto" />
+        <action
+            android:id="@+id/action_tabla_inventario_to_crear_producto"
+            app:destination="@id/crear_producto" />
+        <action
+            android:id="@+id/action_tabla_inventario_to_tabla_despacho"
+            app:destination="@id/tabla_despacho" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalle_producto"
+        android:name="com.example.inventario.detalle_producto"
+        android:label="fragment_detalle_producto"
+        tools:layout="@layout/fragment_detalle_producto" />
+    <fragment
+        android:id="@+id/crear_producto"
+        android:name="com.example.inventario.crear_producto"
+        android:label="fragment_crear_producto"
+        tools:layout="@layout/fragment_crear_producto" />
+    <fragment
+        android:id="@+id/tabla_despacho"
+        android:name="com.example.inventario.tabla_despacho"
+        android:label="fragment_tabla_despacho"
+        tools:layout="@layout/fragment_tabla_despacho" />
+</navigation>
