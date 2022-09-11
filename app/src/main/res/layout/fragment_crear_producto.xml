@@ -36,6 +36,7 @@
         android:minHeight="48dp" />
 
     <Button
+        android:id="@+id/crear"
         android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/brand"

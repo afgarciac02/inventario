@@ -68,13 +68,12 @@ public class crear_producto extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button ingresar = (Button) view.findViewById(R.id.ingresar);
-        ingresar.setOnClickListener(new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View view) {
-                                            Navigation.findNavController(view).navigate(R.id.tabla_inventario);
-                                        }
-                                    }
-        );
+        Button crear = (Button) view.findViewById(R.id.crear);
+        crear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.tabla_inventario);
+            }
+        });
     }
 }
