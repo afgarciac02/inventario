@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">inventario</string>
+    <string name="prompt_email">correo</string>
+    <string name="prompt_password">contraseña</string>
+    <string name="action_sign_in">ingresar o registar</string>
+    <string name="action_sign_in_short">ingresar</string>
+    <string name="welcome">bienvenido</string>
+    <string name="invalid_username">usuario invalido</string>
+    <string name="invalid_password">constraseña mayor a 5 caracteres</string>
+    <string name="login_failed">login fallido</string>
+    <string name="hello_blank_fragment">hola fracmento en blanco</string>
+    <string name="login">ingreso</string>
+    <string name="mail">correo</string>
+    <string name="password">contraseña</string>
+    <string name="user">Usuario</string>
+    <string name="Return">Usuario</string>
+    <string name="info">Informacion del producto</string>
+    <string name="productName">nombre de producto</string>
+    <string name="create">crear</string>
+    <string name="time">tiempo</string>
+    <string name="Hour">Hora</string>
+</resources>
